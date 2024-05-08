@@ -1,3 +1,7 @@
+" keymaps.vim: keybindings for my vimrc
+" Maintainer:  @mpbsd
+" Version:     0.1
+
 " s:keymaps {{{
 let s:keymaps = [
       \  {
@@ -349,3 +353,5 @@ function VimSetKeymaps(keymaps) abort
 endfunction
 
 call VimSetKeymaps(s:keymaps)
+
+" vim: set fileencoding=utf8: "
