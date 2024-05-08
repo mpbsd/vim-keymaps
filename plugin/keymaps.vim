@@ -300,6 +300,36 @@ let s:keymaps = [
       \    'rhs': ':call VimParseEeesInfo()<cr>',
       \    'des': 'create a JSON out of a HTML file with employees info',
       \  },
+      \  {
+      \    'mod': 'normal',
+      \    'lhs': '<leader>mk',
+      \    'rhs': ':make<cr>',
+      \    'des': 'compile the draft version of the root document',
+      \  },
+      \  {
+      \    'mod': 'normal',
+      \    'lhs': '<leader>mb',
+      \    'rhs': ':make bib<cr>',
+      \    'des': 'compile the bibliography',
+      \  },
+      \  {
+      \    'mod': 'normal',
+      \    'lhs': '<leader>mc',
+      \    'rhs': ':make clean<cr>',
+      \    'des': 'clean auxiliary files',
+      \  },
+      \  {
+      \    'mod': 'normal',
+      \    'lhs': '<leader>mf',
+      \    'rhs': ':make final<cr>',
+      \    'des': 'compile the final version of the root document',
+      \  },
+      \  {
+      \    'mod': 'normal',
+      \    'lhs': '<leader>gb',
+      \    'rhs': ':call VimGetBibTeXCitationKeys()<cr>',
+      \    'des': 'get bibtex citation keys',
+      \  },
       \]
 " }}}
 
