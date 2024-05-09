@@ -353,5 +353,3 @@ function VimSetKeymaps(keymaps) abort
 endfunction
 
 call VimSetKeymaps(s:keymaps)
-
-" vim: set fileencoding=utf8: "
