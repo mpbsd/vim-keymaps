@@ -1,4 +1,4 @@
-" keymaps.vim: keybindings for my vimrc
+" keymaps.vim: keymaps for my vimrc
 " Maintainer:  @mpbsd
 " Version:     0.2
 
@@ -43,6 +43,10 @@ nnoremap <C-Right> <C-W><
 nnoremap <Leader>ab :call VimAddCurrentWordToTheAbbreviationsList()<CR>
 nnoremap <Leader>aw :call VimAddCurrentWordToTheWordsList()<CR>
 
+inoremap <localleader>tu <esc>mmbgUiw`ma
+inoremap <localleader>tl <esc>mmbguiw`ma
+inoremap <localleader>cc <esc>mmb~`ma
+
 nnoremap <Leader>pi :PlugInstall<CR>
 nnoremap <Leader>pd :PlugUpdate<CR>
 nnoremap <Leader>pg :PlugUpgrade<CR>
@@ -50,11 +54,13 @@ nnoremap <Leader>pc :PlugClean<CR>
 
 nnoremap <Leader>0g :0G<CR>
 
-inoremap <localleader>tu <esc>mmbgUiw`ma
-inoremap <localleader>tl <esc>mmbguiw`ma
-inoremap <localleader>cc <esc>mmb~`ma
-
 nnoremap <Leader>ue :UltiSnipsEdit<CR>
+
+nnoremap <Leader>mk :make<CR>
+nnoremap <Leader>mb :make bib<CR>
+nnoremap <Leader>mc :make clean<CR>
+nnoremap <Leader>mf :make final<CR>
+nnoremap <Leader>gb :call VimGetBibTeXCitationKeys()<CR>
 
 nnoremap <Leader>ch :colorscheme habamax<CR>
 nnoremap <Leader>cl :colorscheme lunaperche<CR>
@@ -63,11 +69,5 @@ nnoremap <Leader>cs :colorscheme slate<CR>
 nnoremap <Leader>psi :call VimParseStudentsInfo()<CR>
 nnoremap <Leader>pei :call VimParseEeesInfo()<CR>
 
-nnoremap <Leader>mk :make<CR>
-nnoremap <Leader>mb :make bib<CR>
-nnoremap <Leader>mc :make clean<CR>
-nnoremap <Leader>mf :make final<CR>
-nnoremap <Leader>gb :call VimGetBibTeXCitationKeys()<CR>
-
-nnoremap <Leader>e388 :call VimEditLogbook("IME0388")<CR>
-nnoremap <Leader>e415 :call VimEditLogbook("IME0415")<CR>
+nnoremap <Leader>388 :call VimEditLogbook("IME0388")<CR>
+nnoremap <Leader>415 :call VimEditLogbook("IME0415")<CR>
